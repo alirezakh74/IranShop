@@ -102,9 +102,66 @@ ul {
   margin-top: 15px;
 } */
 
-.sidenav .menu a {
+.sidenav .menu .website-name{
+  font-size: 0rem;
+  color: var(--blue-middle-color);
+  transition: all 0.5s;
+}
+
+.sidenav .menu .website-name:hover{
+  color: var(--blue-light-color);
+  transform: scale(1.2);
+}
+
+.sidenav .menu .website-name .char{
+  font-size: 1.7rem !important;
+  /* color: red; */
+  padding: 0;
+  margin: 0;
+  animation: changecolor 6.0s ease-out 0.0s infinite alternate both;
+}
+
+.sidenav .menu .website-name .char:nth-child(1){
+  animation-delay: 0.25s !important;
+}
+.sidenav .menu .website-name .char:nth-child(2){
+  animation-delay: 0.5s !important;
+}
+.sidenav .menu .website-name .char:nth-child(3){
+  animation-delay: 0.75s !important;
+}
+.sidenav .menu .website-name .char:nth-child(4){
+  animation-delay: 1.0s !important;
+}
+.sidenav .menu .website-name .char:nth-child(5){
+  animation-delay: 1.25s !important;
+}
+.sidenav .menu .website-name .char:nth-child(6){
+  animation-delay: 1.5s !important;
+}
+.sidenav .menu .website-name .char:nth-child(7){
+  animation-delay: 1.75s !important;
+}
+.sidenav .menu .website-name .char:nth-child(8){
+  animation-delay: 2.0s !important;
+}
+.sidenav .menu .website-name .char:nth-child(9){
+  animation-delay: 2.25s !important;
+}
+
+@keyframes changecolor {
+  from {color: var(--primary-color);}
+  to {color: var(--secondary-color);}
+}
+
+.sidenav .menu a.single-menu {
   padding: 5px;
-  border-radius: 5px;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: right;
+  padding: 5px 10px;
+  
 }
 
 .sidenav .menu a:hover {
@@ -114,9 +171,9 @@ ul {
 .sidenav .menu .dropdown-btn {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 2px;
+  padding: 5px 10px;
   background-color: var(--blue-dark-color);
   color: var(--primary-color);
   /* border: none; */
@@ -128,6 +185,7 @@ ul {
 }
 
 .sidenav .menu .dropdown-btn .drowpdown-icon{
+  /* transform: rotate(90deg); */
   transition: all 0.5s;
 }
 
@@ -139,10 +197,21 @@ ul {
   /* max-height: 300px; */
   overflow: hidden;
   transition: all 0.5s;
+  margin-top: 0.3rem;
+  gap: 3px;
+}
+
+.sidenav .menu .dropdown-menu a{
+  padding: 5px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  text-align: right;
 }
 
 .sidenav .menu .dropdown-menu a:hover {
   background-color: var(--blue-middle-color);
+  /* border: 1px solid white; */
 }
 
 .active {
