@@ -1,3 +1,3 @@
 # ElhamShop
 
-eCommerce Template alogn with Dashboard
+eCommerce Template along with Dashboard
