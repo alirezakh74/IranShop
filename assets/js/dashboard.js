@@ -7,6 +7,10 @@ for (let i = 0; i < drowpdownBtns.length; ++i) {
     {
       if(drowpdownBtn == this) continue;
       drowpdownBtn.classList.remove('active');
+      if(drowpdownBtn.lastElementChild.classList.contains('rotate-180'))
+      {
+        drowpdownBtn.lastElementChild.classList.remove('rotate-180');
+      }
       drowpdownBtn.nextElementSibling.style.height = '0px';
     }
 
