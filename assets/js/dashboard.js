@@ -74,10 +74,12 @@ for(let i = 0; i < dropDownWrapper.length; ++i){
       dropContent.style.visibility = 'visible';
       dropBtn.innerHTML = 'close';
       // close other open drop content
-      // for(let j = 0; j < dropDownWrapper.length; ++j){
-      //   let dropBtn_close = dropDownWrapper[j].firstElementChild;
-      //   dropBtn_close.close();
-      // }
+      for(let j = 0; j < dropDownWrapper.length; ++j){
+        let dropBtn_close = dropDownWrapper[j].firstElementChild;
+        if(dropBtn_close == this) continue;
+        if(dropBtn_close.innerHTML == 'close')
+          dropBtn_close.click();
+      }
     } else {
       dropContent.style.visibility = 'hidden';
       dropBtn.innerHTML = dropBtnType;
