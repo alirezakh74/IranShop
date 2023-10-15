@@ -80,3 +80,7 @@ button {
 .drop-down-wrapper .drop-down-content a:hover {
   background-color: var(--blue-light-color);
 }
+
+.counter-text{
+  user-select: none;
+}
