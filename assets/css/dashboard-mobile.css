@@ -275,9 +275,8 @@
     position: absolute;
     top: -2px;
     right: -5px;
-    background-color: salmon;
-    border-radius: 10px;
-    color: var(--secondary-color);
+    background-color: var(--counter-bg-color);
+    color: var(--counter-color);
 }
 
 .header .messages-wrapper{
@@ -287,9 +286,8 @@
     position: absolute;
     top: -2px;
     right: -9px;
-    background-color: salmon;
-    border-radius: 10px;
-    color: var(--secondary-color);
+    background-color: var(--counter-bg-color);
+    color: var(--counter-color);
 }
 
 

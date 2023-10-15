@@ -1,13 +1,15 @@
 :root {
-  --primary-color: #fff;
-  --secondary-color: #000;
-  --blue-dark-color: #12486b;
-  --blue-middle-color: #419197;
-  --blue-light-color: #78d6c6;
-  --monochromatic-dark-dark-color: #7c8932;
-  --monochromatic-dark-color: #a3b05a;
+  --primary-color: #000;
+  --secondary-color: #6e78ff;
+  --blue-dark-color: #6c8dfa;
+  --blue-middle-color: #68b6ef;
+  --blue-light-color: #65cbe9;
+  --monochromatic-dark-dark-color: #fb6f92;
+  --monochromatic-dark-color: #f55c7a;
   --monochromatic-middle-color: #cbd68e;
   --monochromatic-light-color: #f5fccd;
+  --counter-color: #fff;
+  --counter-bg-color: #e74a3b;
 }
 
 .dark-theme {
@@ -83,4 +85,12 @@ button {
 
 .counter-text{
   user-select: none;
+  border-radius: 100% !important;
+  width: 1rem;
+  height: 1rem;
+  line-height: 1rem;
+}
+
+.user-name{
+  color: var(--primary-color);
 }
