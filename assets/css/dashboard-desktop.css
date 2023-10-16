@@ -265,8 +265,8 @@
 }
 .header .notifications-wrapper .counter-text {
     position: absolute;
-    top: -2px;
-    right: -5px;
+    top: -18px;
+    right: -18px;
     background-color: var(--counter-bg-color);
     color: var(--counter-color);
 }
@@ -276,8 +276,8 @@
 }
 .header .messages-wrapper .counter-text {
     position: absolute;
-    top: -2px;
-    right: -9px;
+    top: -18px;
+    right: -18px;
     background-color: var(--counter-bg-color);
     color: var(--counter-color);
 }
@@ -294,4 +294,11 @@
 }
 
 .content {
+}
+
+.content .head-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }

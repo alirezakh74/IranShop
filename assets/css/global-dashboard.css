@@ -10,6 +10,9 @@
   --monochromatic-light-color: #f5fccd;
   --counter-color: #fff;
   --counter-bg-color: #e74a3b;
+
+  --counter-white: #fff;
+  --counter-black: #000;
 }
 
 .dark-theme {
@@ -17,10 +20,36 @@
   --secondary-color: #fff;
 }
 
+@font-face {
+  font-family: "Vazir";
+  src: url("../fonts/Vazir-Medium-FD-WOL.ttf");
+}
+
+@font-face {
+  font-family: "Khandevane";
+  src: url("../fonts/Khandevane.ttf");
+}
+
+@font-face {
+  font-family: "IranNastaliq";
+  src: url("../fonts/IranNastaliq.ttf");
+}
+
+@font-face {
+  font-family: "FarMitra";
+  src: url("../fonts/Far_Mitra.ttf");
+}
+
+@font-face {
+  font-family: "BNazanin";
+  src: url("../fonts/BNazanin.ttf");
+}
+
 body {
   direction: rtl;
   /* background-color: var(--blue-light-color); */
   height: 100%;
+  font-family: "Vazir", Arial, Helvetica, sans-serif;
 }
 
 *,
@@ -29,6 +58,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Vazir", Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -86,11 +116,28 @@ button {
 .counter-text{
   user-select: none;
   border-radius: 100% !important;
-  width: 1rem;
-  height: 1rem;
+  width: calc(100% + 0.4rem);
+  height: calc(100% + 0.4rem);
   line-height: 1rem;
+  /* padding: 0.1rem 0.5rem; */
 }
 
 .user-name{
   color: var(--primary-color);
+}
+
+.content .head-content .title-content{
+  font-size: 2.3rem;
+}
+
+.content .head-content .report-btn{
+  background-color: var(--blue-dark-color);
+  color: var(--counter-white);
+  border: 1px solid var(--primary-color);
+  border-radius: 16%;
+  padding: 0.4rem;
+}
+
+.content .head-content .report-btn:hover{
+  background-color: var(--secondary-color);
 }
