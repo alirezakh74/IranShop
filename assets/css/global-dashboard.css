@@ -45,11 +45,16 @@
   src: url("../fonts/BNazanin.ttf");
 }
 
+@font-face {
+  font-family: "IranianSans";
+  src: url("../fonts/Iranian_Sans.ttf");
+}
+
 body {
   direction: rtl;
   /* background-color: var(--blue-light-color); */
   height: 100%;
-  font-family: "Vazir", Arial, Helvetica, sans-serif;
+  /* font-family: "Vazir", Arial, Helvetica, sans-serif; */
 }
 
 *,
@@ -116,10 +121,14 @@ button {
 .counter-text{
   user-select: none;
   border-radius: 100% !important;
-  width: calc(100% + 0.4rem);
-  height: calc(100% + 0.4rem);
-  line-height: 1rem;
+  width: calc(100% + 0.2rem);
+  height: calc(100% + 0.2rem);
+  line-height: 1;
   /* padding: 0.1rem 0.5rem; */
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 0.8em;
 }
 
 .user-name{
@@ -136,6 +145,13 @@ button {
   border: 1px solid var(--primary-color);
   border-radius: 16%;
   padding: 0.4rem;
+}
+
+.content .head-content .report-btn a{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .content .head-content .report-btn:hover{
