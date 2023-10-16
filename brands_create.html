@@ -172,73 +172,33 @@
 
         <!-- head-conten -->
         <div class="head-content">
-          <div class="title-content">داشبورد</div>
-          <div class="report-btn">
-            <a href="#">
-              <span class="material-symbols-outlined">
-                download
-              </span>
-              گزارش
-            </a>
-          </div>
+            <div class="title-content">ایجاد برند</div>
         </div>
 
-        <!-- cards -->
-        <div class="cards-wrapper">
+        <!-- horizontal line -->
+        <hr>
 
-          <!-- card 1 -->
-          <div class="card">
-            <div class="card-right-part">
-              <div class="card-title">پرداخت ها</div>
-              <div class="card-value">40,000 تومان</div>
+        <!-- form for create brands -->
+        <form class="brand-create-form" action="#" method="post">
+            <div class="flex-row">
+                <div class="brand-name">
+                    <label for="brand_name">نام</label>
+                    <input id="brand_name" name="brand_name" type="text">
+                </div>
+                <div class="brand-status">
+                    <label for="is_active">وضعیت</label>
+                    <select name="is_active" id="is_active">
+                        <option value="1" selected>فعال</option>
+                        <option value="0">غیر فعال</option>
+                    </select>
+                </div>
             </div>
-            <div class="card-left-part">
-              <span class="material-symbols-outlined">
-                calendar_today
-              </span>
-            </div>
-          </div>
 
-          <!-- card 2 -->
-          <div class="card">
-            <div class="card-right-part">
-              <div class="card-title">سود خالص</div>
-              <div class="card-value">20,000 تومان</div>
+            <div class="flex-row">
+                <button class="form-submit-btn" type="submit">ثبت</button>
+                <a class="form-btn" href="brands.html">بازگشت</a>
             </div>
-            <div class="card-left-part">
-              <span class="material-symbols-outlined">
-                attach_money
-              </span>
-            </div>
-          </div>
-          
-          <!-- card 3 -->
-          <div class="card">
-            <div class="card-right-part">
-              <div class="card-title">وظایف</div>
-              <div class="card-value">لورم ایپسوم</div>
-            </div>
-            <div class="card-left-part">
-              <span class="material-symbols-outlined">
-                assignment
-              </span>
-            </div>
-          </div>
-          
-          <!-- card 4 -->
-          <div class="card">
-            <div class="card-right-part">
-              <div class="card-title">کامنت ها</div>
-              <div class="card-value">15</div>
-            </div>
-            <div class="card-left-part">
-              <span class="material-symbols-outlined">
-                comment
-              </span>
-            </div>
-          </div>
-
-        </div>
+        </form>
       </div>
 
     </div>
