@@ -157,3 +157,54 @@ button {
 .content .head-content .report-btn:hover{
   background-color: var(--secondary-color);
 }
+
+.cards-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card{
+  border: 1px solid var(--counter-black);
+  border-right: 0.25rem solid var(--blue-dark-color);
+  border-radius: 0.35rem;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+  word-wrap: break-word;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  flex: 1 0 21%;
+
+  padding: 1.25rem;
+  padding-bottom: 0.5rem;
+
+  width: 100%;
+}
+
+.card-right-part{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.card-title{
+  color: var(--counter-black);
+  font-size: 0.8em;
+}
+
+.card-value{
+  font-size: 1.4em;
+}
+
+.card-left-part{
+  
+}
