@@ -105,6 +105,21 @@ button {
   cursor: pointer;
 }
 
+.create-btn{
+  background-color: var(--blue-dark-color);
+  color: var(--color-white);
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 0.4rem;
+}
+
+.create-btn a{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .drop-down-wrapper {
   position: relative;
   color: var(--secondary-color);
@@ -162,7 +177,7 @@ button {
 }
 
 .content .head-content .title-content{
-  font-size: 2.3rem;
+  font-size: 1.8rem;
 }
 
 .content .head-content .report-btn{
@@ -262,4 +277,39 @@ button {
 
 label{
   color: var(--primary-color);
+}
+
+.table-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.brands-table{
+  padding: 1rem;
+  align-self: stretch;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.brands-table tr,
+.brands-table th,
+.brands-table td{
+  border: 1px solid var(--color-black);
+  padding: 1rem;
+  text-align: center;
+}
+
+.brands-table tr{
+  padding: 1rem;
+}
+
+.brands-operation{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  outline: none;
 }

@@ -304,14 +304,14 @@
 
 .content {
   background-color: var(--blue-middle-color);
-  color: var(--secondary-color);
+  color: var(--color-black);
   width: 100%;
   min-height: 50px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: right;
-  align-items: flex-start;
+  align-items: center;
   min-height: 100vh;
 }
 
@@ -323,4 +323,26 @@
   flex-direction: column;
   flex: 0 0 100%;
   align-self: stretch;
+}
+
+.table-wrapper{
+  margin: 1rem 0rem;
+}
+
+.brands-table{
+  padding: 0rem;
+}
+
+.brands-table tr,
+.brands-table th,
+.brands-table td{
+  padding: 1.5rem;
+}
+
+.brands-operation{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.0rem;
 }
