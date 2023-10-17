@@ -86,3 +86,23 @@ for(let i = 0; i < dropDownWrapper.length; ++i){
     }
   });
 }
+
+// get all link of side navbar for check click and close sidenavbar in mobile
+// just call menuBtn[0].click() for open or close menu in mobile
+
+let single_menu_links = document.querySelectorAll(".single-menu");
+let drowpdown_menu_links = document.querySelectorAll(".dropdown-menu a");
+
+for(let i = 0; i < single_menu_links.length; i++)
+{
+  single_menu_links[i].addEventListener('click', function(){
+    menuBtn[0].click();
+  });
+}
+
+for(let i = 0; i < drowpdown_menu_links.length; i++)
+{
+  drowpdown_menu_links[i].addEventListener('click', function(){
+    menuBtn[0].click();
+  });
+}
