@@ -13,6 +13,8 @@
 
   --color-white: #fff;
   --color-black: #000;
+
+  --hover-table-btn-duration: 0.5s;
 }
 
 .dark-theme {
@@ -250,7 +252,7 @@ button {
   
 }
 
-.brand-create-form{
+.item-create-form{
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -287,29 +289,46 @@ label{
   margin: 1rem;
 }
 
-.brands-table{
+.list-items-table{
   padding: 1rem;
   align-self: stretch;
   border-collapse: collapse;
   width: 100%;
 }
 
-.brands-table tr,
-.brands-table th,
-.brands-table td{
+.list-items-table tr,
+.list-items-table th,
+.list-items-table td{
   border: 1px solid var(--color-black);
   padding: 1rem;
   text-align: center;
 }
 
-.brands-table tr{
+.list-items-table tr{
   padding: 1rem;
 }
 
-.brands-operation{
+.list-items-table tbody tr:nth-child(odd){
+  background-color: var(--blue-dark-color);
+}
+
+.item-operation{
   display: flex;
   justify-content: space-around;
   align-items: center;
   border: none;
   outline: none;
+}
+
+.table-btn{
+  border: 1px solid var(--color-black);
+  border-radius: 8px;
+  color: var(--color-black);
+  padding: 0.2rem;
+  transition: all var(--hover-table-btn-duration);
+}
+
+.table-btn:hover{
+  background-color: var(--color-black);
+  color: var(--color-white);
 }

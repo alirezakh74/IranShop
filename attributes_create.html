@@ -85,7 +85,7 @@
           <a href="#">لیست محصولات</a>
           <a href="#">لیست نظرات</a>
           <a href="#">دسته بندی ها</a>
-          <a href="attributes.html">ویژگی ها</a>
+          <a href="#">ویژگی ها</a>
           <a href="#">تگ ها</a>
         </div>
       </div>
@@ -172,53 +172,26 @@
     
         <!-- head-conten -->
         <div class="head-content">
-            <div class="title-content">فهرست برندها</div>
-            <div class="create-btn">
-                <a href="brands_create.html">
-                    <span class="material-symbols-outlined">
-                        add
-                    </span>
-                    ایجاد برند
-                </a>
-            </div>
+            <div class="title-content">ایجاد ویژگی ها</div>
         </div>
     
         <!-- horizontal line -->
         <hr>
 
-        <div class="table-wrapper">
-          <table class="list-items-table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>نام</th>
-                <th>وضعیت</th>
-                <th>عملیات</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>برند یک</td>
-                <td>فعال</td>
-                <td>
-                  <div class="item-operation">
-                    <a href="brands_edit.html">
-                      <span class="material-symbols-outlined">
-                      edit
-                      </span>
-                    </a>
-                    <a href="brands_delete.html">
-                      <span class="material-symbols-outlined">
-                      delete
-                      </span>
-                    </a>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <!-- create attribute form -->
+        <form class="item-create-form" action="#" method="post">
+            <div class="flex-row">
+                <div class="item-name">
+                    <label for="attribute_name">نام</label>
+                    <input id="attribute_name" name="attribute_name" type="text">
+                </div>
+            </div>
+
+            <div class="flex-row">
+                <button class="form-submit-btn" type="submit">ثبت</button>
+                <a class="form-btn" href="attributes.html">بازگشت</a>
+            </div>
+        </form>
     
     </div>
 

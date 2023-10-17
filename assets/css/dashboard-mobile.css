@@ -329,17 +329,17 @@
   margin: 1rem 0rem;
 }
 
-.brands-table{
+.list-items-table{
   padding: 0rem;
 }
 
-.brands-table tr,
-.brands-table th,
-.brands-table td{
+.list-items-table tr,
+.list-items-table th,
+.list-items-table td{
   padding: 1.5rem;
 }
 
-.brands-operation{
+.item-operation{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
