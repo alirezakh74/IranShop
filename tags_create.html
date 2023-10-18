@@ -172,23 +172,26 @@
     
         <!-- head-conten -->
         <div class="head-content">
-            <div class="title-content">ویرایش ویژگی <span>جنس</span></div>
+            <div class="title-content">ایجاد تگ</div>
         </div>
     
         <!-- horizontal line -->
         <hr>
 
-        <!-- create attribute edit -->
-        <div class="show-form mt-10 mr-10">
-            <div class="flex-column">
-              <label for="attribute_name">نام</label>
-              <input class="width-25" id="attribute_name" name="attribute_name" type="text" value="جنس">
+        <!-- create tag form -->
+        <form class="item-create-form" action="#" method="post">
+            <div class="flex-row">
+                <div class="item-name flex-column">
+                    <label for="tag_name">نام</label>
+                    <input id="tag_name" name="tag_name" type="text">
+                </div>
             </div>
-            <div class="flex-row mt-10">
-              <button class="form-submit-btn" type="submit">ویرایش</button>
-              <a class="form-btn" href="attributes.html">بازگشت</a>
-          </div>
-        </div>
+
+            <div class="flex-row">
+                <button class="form-submit-btn" type="submit">ثبت</button>
+                <a class="form-btn" href="tags.html">بازگشت</a>
+            </div>
+        </form>
     
     </div>
 

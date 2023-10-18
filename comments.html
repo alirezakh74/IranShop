@@ -172,22 +172,47 @@
     
         <!-- head-conten -->
         <div class="head-content">
-            <div class="title-content">ویرایش ویژگی <span>جنس</span></div>
+            <div class="title-content">فهرست کامنت ها</div>
         </div>
     
         <!-- horizontal line -->
         <hr>
 
-        <!-- create attribute edit -->
-        <div class="show-form mt-10 mr-10">
-            <div class="flex-column">
-              <label for="attribute_name">نام</label>
-              <input class="width-25" id="attribute_name" name="attribute_name" type="text" value="جنس">
-            </div>
-            <div class="flex-row mt-10">
-              <button class="form-submit-btn" type="submit">ویرایش</button>
-              <a class="form-btn" href="attributes.html">بازگشت</a>
-          </div>
+        <!-- comments list -->
+        <div class="table-wrapper">
+          <table class="list-items-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>نام کاربر</th>
+                <th>نام محصول</th>
+                <th>متن کامنت</th>
+                <th>وضعیت</th>
+                <th>عملیات</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td data-title="#">1</td>
+                <td data-title="نام کاربر">علیرضا خدابنده</td>
+                <td data-title="نام محصول">محصول دوم</td>
+                <td data-title="متن کامنت">لورم ایپسوم</td>
+                <td data-title="وضعیت" class="active-status">تایید شده</td>
+                <td data-title="عملیات">
+                  <div class="item-operation">
+                    <a class="table-btn" href="comments_show.html">
+                        ویرایش
+                    </a>
+                    <a class="table-btn" href="comments_delete.html">
+                        حذف
+                    </a>
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
         </div>
     
     </div>

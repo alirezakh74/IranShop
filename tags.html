@@ -172,24 +172,47 @@
     
         <!-- head-conten -->
         <div class="head-content">
-            <div class="title-content">ویرایش ویژگی <span>جنس</span></div>
+            <div class="title-content">فهرست تگ ها</div>
+            <div class="create-btn">
+                <a href="tags_create.html">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                    ایجاد تگ
+                </a>
+            </div>
         </div>
     
         <!-- horizontal line -->
         <hr>
-
-        <!-- create attribute edit -->
-        <div class="show-form mt-10 mr-10">
-            <div class="flex-column">
-              <label for="attribute_name">نام</label>
-              <input class="width-25" id="attribute_name" name="attribute_name" type="text" value="جنس">
-            </div>
-            <div class="flex-row mt-10">
-              <button class="form-submit-btn" type="submit">ویرایش</button>
-              <a class="form-btn" href="attributes.html">بازگشت</a>
+        <!-- tags table -->
+        <div class="table-wrapper">
+            <table class="list-items-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>نام</th>
+                  <th>عملیات</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-title="#">1</td>
+                  <td data-title="نام">برند یک</td>
+                  <td data-title="عملیات">
+                    <div class="item-operation">
+                        <a class="table-btn" href="tags_show.html">
+                          نمایش
+                        </a>
+                        <a class="table-btn" href="tags_edit.html">
+                          ویرایش
+                        </a>
+                      </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </div>
-    
     </div>
 
     </div>
