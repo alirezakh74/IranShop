@@ -291,7 +291,15 @@ button {
 }
 
 .full-width{
-  width: 100%;
+  width: 100% !important;
+}
+
+.auto-width{
+  width: auto !important;
+}
+
+.width-25{
+  width: 25%;
 }
 
 .mr-5{
