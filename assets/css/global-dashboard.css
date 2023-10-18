@@ -314,6 +314,14 @@ button {
   margin-top: 20px;
 }
 
+.min-h-50{
+  min-height: 50px;
+}
+
+.min-h-100{
+  min-height: 100px;
+}
+
 label{
   color: var(--primary-color);
 }
