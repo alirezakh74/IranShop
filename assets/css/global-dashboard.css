@@ -129,6 +129,11 @@ button {
   color: var(--secondary-color);
 }
 
+.single-menu,
+.dropdown-btn{
+  border: 1px solid var(--color-black) !important;
+}
+
 .drop-down-wrapper .drop-down-content {
   visibility: hidden;
   position: absolute;
