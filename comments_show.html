@@ -172,73 +172,34 @@
     
         <!-- head-conten -->
         <div class="head-content">
-            <div class="title-content">ایجاد دسته بندی</div>
+            <div class="title-content">کامنت</div>
         </div>
     
         <!-- horizontal line -->
         <hr>
 
-        <!-- create category form -->
-        <form class="mt-10 full-width" action="#" method="post">
+        <!-- comment show -->
+        <div class="show-form mt-10 mr-10">
+
             <div class="parent-flex-4">
-                <div class="flex-column child-flex-4 full-width">
-                    <label for="category_name">نام</label>
-                    <input id="category_name" name="category_name" type="text">
+
+                <div class="flex-column child-flex-4">
+                    <label for="user_name">نام کاربر</label>
+                    <input id="user_name" type="text" value="جنس" readonly>
                 </div>
-                <div class="flex-column child-flex-4 full-width">
-                    <label for="category_english_name">نام انگلیسی</label>
-                    <input id="category_english_name" name="category_english_name" type="text">
+
+                <div class="flex-column child-flex-4">
+                    <label for="name">تاریخ ایجاد</label>
+                    <input type="text" value="1402-07-25 22:50:25" readonly>
                 </div>
-                <div class="flex-column child-flex-4 full-width">
-                    <label for="category_parent">والد</label>
-                    <select name="category_parent" id="category_parent">
-                        <option value="0" selected>بدون والد</option>
-                        <option value="1">فلان والد</option>
-                    </select>
-                </div>
-                <div class="flex-column child-flex-4 full-width">
-                    <label for="category_status">وضعیت</label>
-                    <select name="category_status" id="category_status">
-                        <option value="1" selected>فعال</option>
-                        <option value="0">غیر فعال</option>
-                    </select>
-                </div>
-                <div class="flex-column child-flex-4 full-width">
-                    <label for="category_attributes">ویژگی ها</label>
-                    <select name="category_attributes" id="category_attributes">
-                        <option value="0" selected>انتخاب ویژگی ها</option>
-                        <option value="1">جنس</option>
-                    </select>
-                </div>
-                <div class="flex-column child-flex-4 full-width">
-                    <label for="category_attributes_filterable">انتخاب ویژگی های قابل فیلتر</label>
-                    <select name="category_attributes_filterable" id="category_attributes_filterable">
-                        <option value="0" selected>انتخاب ویژگی ها</option>
-                        <option value="1">جنس</option>
-                    </select>
-                </div>
-                <div class="flex-column child-flex-4 full-width">
-                    <label for="category_attributes_variation">انتخاب ویژگی متغیر</label>
-                    <select name="category_attributes_variation" id="category_attributes_variation">
-                        <option value="0" selected>انتخاب متغیر</option>
-                        <option value="1">اندازه</option>
-                    </select>
-                </div>
-                <div class="flex-column child-flex-4 full-width">
-                    <label for="category_icon">آیکون</label>
-                    <input id="category_icon" name="category_icon" type="text">
-                </div>
-                <div class="flex-column child-flex-4 full-width">
-                    <label for="category_description">توضیحات</label>
-                    <textarea class="min-h-100" id="category_description" name="category_description"></textarea>
-                </div>
+
             </div>
 
-            <div class="flex-row mt-20">
-                <button class="form-submit-btn" type="submit">ثبت</button>
-                <a class="form-btn" href="categories.html">بازگشت</a>
-            </div>
-        </form>
+            <div class="flex-row mt-10">
+              <a class="form-btn" href="comments.html">بازگشت</a>
+          </div>
+
+        </div>
     
     </div>
 

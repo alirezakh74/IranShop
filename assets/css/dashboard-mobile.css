@@ -379,3 +379,20 @@
 .list-items-table td .item-operation{
   align-items: flex-end;
 }
+
+.flex-mobile{
+  flex-direction: column !important;
+}
+
+.parent-flex-4{
+  flex-direction: column;
+}
+
+
+.show-form{
+  width: 100%;
+}
+
+.width-mobile-100{
+  width: 100%;
+}
