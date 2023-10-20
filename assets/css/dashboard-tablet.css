@@ -17,7 +17,7 @@
   }
   
   .sidenav {
-    background-color: var(--blue-dark-color);
+    background-color: var(--side-bar-color);
     color: var(--primary-color);
     width: 24vw;
     min-height: 100vh;
@@ -56,12 +56,12 @@
   
   .sidenav .menu .website-name{
     font-size: 0rem;
-    color: var(--blue-middle-color);
+    color: var(--content-color);
     transition: all 0.5s;
   }
   
   .sidenav .menu .website-name:hover{
-    color: var(--blue-light-color);
+    color: var(--top-bar-color);
     transform: scale(1.2);
   }
   
@@ -120,7 +120,7 @@
   }
   
   .sidenav .menu a:hover {
-    background-color: var(--blue-middle-color);
+    background-color: var(--content-color);
   }
   
   .sidenav .menu .dropdown-btn {
@@ -129,7 +129,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px 10px;
-    background-color: var(--blue-dark-color);
+    background-color: var(--side-bar-color);
     color: var(--primary-color);
     /* border: none; */
     /* outline: none; */
@@ -165,24 +165,24 @@
   }
   
   .sidenav .menu .dropdown-menu a:hover {
-    background-color: var(--blue-middle-color);
+    background-color: var(--content-color);
     /* border: 1px solid white; */
   }
   
   .active {
-    background-color: var(--blue-middle-color) !important;
+    background-color: var(--content-color) !important;
     color: var(--primary-color) !important;
   }
   
   .header-content-wrapper {
-    background-color: var(--blue-middle-color);
+    background-color: var(--content-color);
     color: var(--primary-color);
     width: calc(100vw - 5vw);
-    min-height: 500vh;
+    min-height: 100vh;
   }
   
   .header-content-wrapper {
-    background-color: var(--blue-middle-color);
+    background-color: var(--content-color);
     color: var(--primary-color);
     width: 100vw;
     display: flex;
@@ -191,7 +191,7 @@
   }
   
   .header {
-    background-color: var(--blue-light-color);
+    background-color: var(--top-bar-color);
     color: var(--primary-color);
     width: 100%;
     min-height: 50px;
@@ -242,7 +242,7 @@
   }
   
   .header .search-btn-wrapper .searchForm input {
-    border: 1px solid var(--blue-dark-color);
+    border: 1px solid var(--side-bar-color);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     height: 1.5rem;
@@ -250,7 +250,7 @@
   }
   .header .search-btn-wrapper .searchForm input:focus {
     outline-color: blue;
-    /* border: 1px solid var(--blue-middle-color); */
+    /* border: 1px solid var(--content-color); */
   }
   
   .header .search-btn-wrapper .searchBtn {

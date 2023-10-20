@@ -1,13 +1,12 @@
 :root {
   --primary-color: #000;
-  --secondary-color: #fff;
-  --blue-dark-color: #fff;
-  --blue-middle-color: #fff;
-  --blue-light-color: #fff;
-  --monochromatic-dark-dark-color: #fb6f92;
-  --monochromatic-dark-color: #f55c7a;
-  --monochromatic-middle-color: #cbd68e;
-  --monochromatic-light-color: #f5fccd;
+  --secondary-color: #bf3e3e;
+
+  --top-bar-color: #f3b391;
+  --side-bar-color: #f3b391;
+  --content-color: #f6d4ba;
+
+  /* badge colors */
   --counter-color: #fff;
   --counter-bg-color: #e74a3b;
 
@@ -56,7 +55,7 @@
 
 body {
   direction: rtl;
-  /* background-color: var(--blue-light-color); */
+  /* background-color: var(--top-bar-color); */
   height: 100%;
   /* font-family: "Vazir", Arial, Helvetica, sans-serif; */
 }
@@ -75,10 +74,18 @@ a {
   text-decoration: none;
 }
 
+.b-green{
+  background-color: green !important;
+}
+
+.b-red{
+  background-color: red !important;
+}
+
 .form-btn{
-  background-color: var(--blue-dark-color);
+  background-color: var(--side-bar-color);
   color: var(--primary-color);
-  border: 1px solid var(--blue-light-color);
+  border: 1px solid var(--top-bar-color);
   border-radius: 8px;
   padding: 0.2rem;
 }
@@ -109,8 +116,12 @@ button {
   cursor: pointer;
 }
 
+.sidenav{
+  background-color: var(--color-white);
+}
+
 .create-btn{
-  background-color: var(--blue-dark-color);
+  background-color: var(--side-bar-color);
   color: var(--color-white);
   border: 1px solid var(--primary-color);
   border-radius: 8px;
@@ -140,7 +151,7 @@ button {
   top: 1.6rem;
   left: -80px;
   width: 180px;
-  background-color: var(--blue-light-color);
+  background-color: var(--top-bar-color);
   border: 1px solid var(--primary-color);
   border-radius: 10px;
   padding: 1rem;
@@ -165,7 +176,7 @@ button {
 }
 
 .drop-down-wrapper .drop-down-content a:hover {
-  background-color: var(--blue-middle-color);
+  background-color: var(--content-color);
 }
 
 .counter-text{
@@ -185,12 +196,22 @@ button {
   color: var(--primary-color);
 }
 
+.content{
+  background-color: var(--content-color);
+}
+
+.content .head-content{
+  background-color: var(--color-white);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
 .content .head-content .title-content{
   font-size: 1.8rem;
 }
 
 .content .head-content .report-btn{
-  background-color: var(--blue-dark-color);
+  background-color: var(--side-bar-color);
   color: var(--color-white);
   border: 1px solid var(--primary-color);
   border-radius: 8px;
@@ -307,6 +328,10 @@ button {
   width: 25%;
 }
 
+.width-50{
+  width: 50%;
+}
+
 .mr-5{
   margin-right: 5px;
 }
@@ -367,7 +392,7 @@ label{
 }
 
 .list-items-table tbody tr:nth-child(odd){
-  background-color: var(--blue-dark-color);
+  background-color: var(--side-bar-color);
 }
 
 .item-operation{
@@ -396,9 +421,16 @@ label{
   margin: 1rem 0.4rem;
 }
 
+select{
+    font-size: 1rem;
+    border-radius: 8px;
+    padding: 5px;
+}
+
 input{
-  padding: 0.2rem;
   font-size: 1rem;
+  border-radius: 8px;
+  padding: 5px;
 }
 
 input[readonly] {
@@ -407,6 +439,10 @@ input[readonly] {
   border-radius: 8px;
   outline: none;
   padding: 5px;
+}
+
+input[search]{
+  border: 1px solid var(--color-black) !important;
 }
 
 .active-status{
