@@ -17,7 +17,7 @@
   }
   
   .sidenav {
-    background-color: var(--side-bar-color);
+    background-color: var(--color-white);
     color: var(--primary-color);
     width: 24vw;
     min-height: 100vh;
@@ -104,6 +104,10 @@
   @keyframes changecolor {
     from {color: var(--primary-color);}
     to {color: var(--secondary-color);}
+  }
+
+  .single-menu{
+    background-color: var(--side-bar-color);
   }
   
   .sidenav .menu a.single-menu {
