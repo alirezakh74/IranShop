@@ -201,7 +201,6 @@ button {
 }
 
 .content .head-content{
-  background-color: var(--color-white);
   border-radius: 8px;
   padding: 1rem;
 }
