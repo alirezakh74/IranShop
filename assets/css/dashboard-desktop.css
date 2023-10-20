@@ -303,3 +303,10 @@
   justify-content: space-between;
   align-items: center;
 }
+
+/* for mini size or landscape and sidebar width problem */
+@media only screen and (max-width: 900px) and (min-width: 769px){
+  .sidenav{
+    width: 21vw;
+  }
+}
