@@ -1,3 +1,3 @@
-# IranShop
+# IranShop_Dashboard
 
-eCommerce Template along with Dashboard
+Dashboard for eCommerce website
