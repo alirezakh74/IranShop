@@ -451,3 +451,18 @@ input[search]{
 .non-active-status{
   color: var(--color-white);
 }
+
+.alert-section{
+  background-color: rgba(235, 39, 39, 0.3);
+  margin-top: 1.5rem;
+  padding: 0.6rem;
+  border-radius: 8px;
+}
+
+.alerts{
+  margin: 0.2rem;
+}
+
+.alert-text{
+  color: red;
+}
